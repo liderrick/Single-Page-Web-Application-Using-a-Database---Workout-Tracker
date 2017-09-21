@@ -1,0 +1,17 @@
+{
+  "name": "Derrick_Li_-_Single-Page_Web_Application_Using_a_Database",
+  "version": "1.0.0",
+  "description": "Workout Tracker using MySQL database",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Derrick Li; Oregon State University",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.2",
+    "express-handlebars": "^2.0.1",
+    "mysql": "^2.8.0"
+  }
+}

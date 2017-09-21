@@ -1,0 +1,41 @@
+<h1>Welcome to Your Workout Tracker.</h1>
+
+<br>
+
+<form method="post" action="/update-table">
+	<fieldset>
+		<legend>Edit Your Selected Exercise: </legend>
+
+		<label for="exerciseNameEdit">Exercise Name: </label>
+		<input type="text" id="exerciseNameEdit" name="exerciseName" value="{{this.name}}" required>
+
+		<br>
+		<label for="repsEdit">Number of Reps: </label>
+		<input type="number" id="repsEdit" name="reps" value="{{this.reps}}">
+
+		<br>
+		<label for="weightEdit">Weight: </label>
+		<input type="number" id="weightEdit" name="weight" value="{{this.weight}}">
+
+		<br>
+		<label for="dateEdit">Date: </label>
+		<input type="date" id="dateEdit" name="date" value="{{this.date}}">
+
+		<br>
+		<label for="lbsEdit">Weight Unit: </label>
+		<select id="lbsEdit" name="lbs" >
+			{{#if this.lbs}}
+				<option value="1" selected>lbs</option>
+				<option value="0">kgs</option>
+			{{else}}
+				<option value="1">lbs</option>
+				<option value="0" selected>kgs</option>
+			{{/if}}
+		</select>
+
+		<input type="hidden" id="idEdit" name="id" value="{{this.id}}">
+		<input type="submit" id="editExerciseButton" name="Edit Exercise" value="Save Changes">
+	</fieldset>
+</form>
+
+<script src="client.js"></script>

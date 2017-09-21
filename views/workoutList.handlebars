@@ -1,0 +1,59 @@
+<h1>Welcome to Your Workout Tracker.</h1>
+
+<br>
+
+<form method="post">
+	<fieldset>
+		<legend>Add an Exercise:</legend>
+
+		<label for="exerciseNameInput">Exercise Name: </label>
+		<input type="text" id="exerciseNameInput" name="exerciseName">
+
+		<br>
+		<label for="repsInput">Number of Reps: </label>
+		<input type="number" id="repsInput" name="reps">
+
+		<br>
+		<label for="weightInput">Weight: </label>
+		<input type="number" id="weightInput" name="weight">
+
+		<br>
+		<label for="dateInput">Date: </label>
+		<input type="date" id="dateInput" name="date">
+
+		<br>
+		<label for="lbsInput">Weight Unit: </label>
+		<select id="lbsInput" name="lbs" >
+			<option value="1">lbs</option>
+			<option value="0">kgs</option>
+		</select>
+
+		<input type="submit" id="addExerciseButton" name="Add Exercise" value="Add Exercise">
+	</fieldset>
+</form>
+
+<br><br>
+
+<div>
+	<table id = "exerciseTable">
+		<thead>
+            <tr>
+                <th>Exercise Name</th>
+                <th>Number of Reps</th>
+                <th>Weight</th>
+                <th>Date</th>
+                <th>Weight Unit</th>
+                <th>Edit/Remove</th>
+            </tr>
+		</thead>
+		<tbody id="tableBody">
+			<!-- Date gets inserted here -->
+		</tbody>
+	</table>
+</div>
+
+<br>
+
+<input type="submit" id="clearTableButton" name="Clear Table" value="Clear Table">
+
+<script src="client.js"></script>
