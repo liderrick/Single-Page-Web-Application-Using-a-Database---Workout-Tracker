@@ -1,6 +1,6 @@
 # Single-Page Web Application Using a Database - Workout Tracker
 
-This web application allows the user to track their workouts using a MySQL database. Interactions with the database are handled via self-implemented AJAX instructions.
+This web application allows the user to track their workouts using a MySQL database. Interactions with the database are handled via self-implemented AJAX instructions. Check out a running test version of the web app [here](https://dlworkout-tracker.herokuapp.com).
 
 ## Instructions to run locally
 1. Enter credentials to MySQL database in `dbcon.js`.
